@@ -1,6 +1,6 @@
 # 违约用户风险预测
 
-本次参加的是四大赛题中的用户贷款风险预测（算法竞赛）(https://aichallenge.msxf.com/#/subject/D/info)
+本次参加的是四大赛题中的[用户贷款风险预测（算法竞赛）](https://aichallenge.msxf.com/#/subject/D/info)
 
 
 ## **队伍简介** ##
