@@ -135,11 +135,11 @@ if __name__ == '__main__':
     auth_idcard = list(train_data['id_card_x']);user_idcard = list(train_data['id_card_y'])
     idcard_result = []
     for indexx,uu in enumerate(auth_idcard):
-        if (str(auth_idcard[indexx])=='nan') | (str(user_idcard[indexx])=='nan'):
+        if (str(auth_idcard[indexx])=='nan') and (str(user_idcard[indexx])=='nan'):
             idcard_result.append(0)
-        elif (str(auth_idcard[indexx])!='nan') | (str(user_idcard[indexx])=='nan'):
+        elif (str(auth_idcard[indexx])!='nan') and (str(user_idcard[indexx])=='nan'):
             idcard_result.append(1)
-        elif (str(auth_idcard[indexx])=='nan') | (str(user_idcard[indexx])!='nan'):
+        elif (str(auth_idcard[indexx])=='nan') and (str(user_idcard[indexx])!='nan'):
             idcard_result.append(2)
         else:
             ttt1 = str(auth_idcard[indexx])[0] + str(auth_idcard[indexx])[-1]
@@ -322,11 +322,11 @@ if __name__ == '__main__':
     auth_idcard = list(test_data['id_card_x']);user_idcard = list(test_data['id_card_y'])
     idcard_result = []
     for indexx,uu in enumerate(auth_idcard):
-        if (str(auth_idcard[indexx])=='nan') | (str(user_idcard[indexx])=='nan'):
+        if (str(auth_idcard[indexx])=='nan') and (str(user_idcard[indexx])=='nan'):
             idcard_result.append(0)
-        elif (str(auth_idcard[indexx])!='nan') | (str(user_idcard[indexx])=='nan'):
+        elif (str(auth_idcard[indexx])!='nan') and (str(user_idcard[indexx])=='nan'):
             idcard_result.append(1)
-        elif (str(auth_idcard[indexx])=='nan') | (str(user_idcard[indexx])!='nan'):
+        elif (str(auth_idcard[indexx])=='nan') and (str(user_idcard[indexx])!='nan'):
             idcard_result.append(2)
         else:
             ttt1 = str(auth_idcard[indexx])[0] + str(auth_idcard[indexx])[-1]
